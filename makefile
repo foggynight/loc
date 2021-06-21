@@ -1,4 +1,5 @@
 EXEC := loc
+INSTALL_DIR := /usr/local/bin
 
 SRC_DIR := src
 OBJ_DIR := obj
@@ -33,4 +34,8 @@ remove:
 
 .PHONY: install
 install:
-	cp $(EXEC) /usr/local/bin/
+	cp $(EXEC) $(INSTALL_DIR)/$(EXEC)
+
+.PHONY: uninstall
+uninstall:
+	rm $(INSTALL_DIR)/$(EXEC)
