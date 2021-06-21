@@ -1,5 +1,7 @@
 # loc
 
+## Description
+
 Print various counts read from standard input:
 - `loc`: Lines of code (number of newlines)
 - `sloc`: Significant lines of code (number of non-empty lines)
