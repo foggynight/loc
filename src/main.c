@@ -11,8 +11,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-void reset_line(char **line, size_t *line_size);
-
 int main(void)
 {
 	size_t loc = 0;	// Lines of code
@@ -27,19 +25,13 @@ int main(void)
 		if (*line != '\n')
 			++sloc;
 		bytes += strlen(line);
-		reset_line(&line, &line_size);
 	}
+
+	free(line);
 
 	printf("loc:\t%ld\n", loc);
 	printf("sloc:\t%ld\n", sloc);
 	printf("bytes:\t%ld\n", bytes);
 
 	return 0;
-}
-
-void reset_line(char **line, size_t *line_size)
-{
-	free(*line);
-	*line = NULL;
-	*line_size = 0;
 }
