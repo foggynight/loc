@@ -21,12 +21,12 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) -o $@ $(CFLAGS) -c $<
 
 $(OBJ_DIR):
-	@mkdir -p $@
+	mkdir -p $@
 
 .PHONY: clean
 clean:
-	@rm -frv $(OBJ_DIR)
+	rm -frv $(OBJ_DIR)
 
 .PHONY: remove
 remove:
-	@rm -frv $(EXEC) $(OBJ_DIR)
+	rm -frv $(EXEC) $(OBJ_DIR)
