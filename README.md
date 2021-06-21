@@ -1,6 +1,20 @@
 # loc
 
-Count lines of code.
+Print various counts read from standard input:
+- `loc`: Lines of code (number of newlines)
+- `sloc`: Significant lines of code (number of non-empty lines)
+- `bytes`: Size in bytes (number of characters)
+
+
+## Installation
+
+```sh
+make
+sudo make install
+```
+
+**Note:** By default `loc` is installed in the `/usr/local/bin` directory; it
+can be uninstalled using: `sudo make uninstall`.
 
 
 ## License
