@@ -30,3 +30,7 @@ clean:
 .PHONY: remove
 remove:
 	rm -frv $(EXEC) $(OBJ_DIR)
+
+.PHONY: install
+install:
+	cp $(EXEC) /usr/local/bin/
