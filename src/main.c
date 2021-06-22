@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main(void)
 {
@@ -20,11 +19,12 @@ int main(void)
 	char *line = NULL;
 	size_t line_size = 0;
 
-	while (getline(&line, &line_size, stdin) != EOF) {
+	int count;
+	while ((count = getline(&line, &line_size, stdin)) != EOF) {
 		++loc;
 		if (*line != '\n')
 			++sloc;
-		bytes += strlen(line);
+		bytes += count;
 	}
 
 	free(line);
