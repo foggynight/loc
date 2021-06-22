@@ -14,7 +14,7 @@ int main(void)
 {
 	size_t loc = 0;	// Lines of code
 	size_t sloc = 0;	// Non-empty lines of code
-	size_t bytes = 0;	// Total size of the input in bytes
+	size_t bytes = 0;	// Total size in bytes
 
 	char *line = NULL;
 	size_t line_size = 0;
