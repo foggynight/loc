@@ -29,9 +29,12 @@ int main(void)
 
 	free(line);
 
-	printf("loc:\t%ld\n", loc);
-	printf("sloc:\t%ld\n", sloc);
-	printf("bytes:\t%ld\n", bytes);
+	printf(
+			"loc:\t%ld\n"
+			"sloc:\t%ld\n"
+			"bytes:\t%ld\n",
+			loc, sloc, bytes
+		);
 
 	return 0;
 }
