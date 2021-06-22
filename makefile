@@ -16,7 +16,7 @@ all: $(EXEC)
 $(EXEC): $(OBJS)
 	$(CC) -o $@ $^
 
-$(OBJS):$(HEDS)
+$(OBJS): $(HEDS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) -o $@ $(CFLAGS) -c $<
