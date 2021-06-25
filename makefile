@@ -9,7 +9,7 @@ SRCS := $(wildcard $(SRC_DIR)/*.c)
 OBJS := $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 CC := gcc
-CFLAGS := -Wall -Wextra -Wpedantic
+CFLAGS := -O3 -Wall -Wextra -Wpedantic
 
 all: $(EXEC)
 
