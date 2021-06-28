@@ -3,7 +3,7 @@
 ## Description
 
 Print various counts read from standard input:
-- `loc`: Lines of code (number of newlines)
+- `loc`: Lines of code (number of newline characters)
 - `sloc`: Significant lines of code (number of non-empty lines)
 - `bytes`: Size in bytes (number of characters)
 
