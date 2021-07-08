@@ -1,12 +1,3 @@
-/**
- * --- loc ---
- *
- * Count lines of code.
- *
- * Copyright (C) 2021 Robert Coffey
- * Released under the GPLv2 license
- **/
-
 #include <stdio.h>
 #include <stdlib.h>
 
