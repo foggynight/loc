@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		for (int i = 1; i < argc; ++i) {
 			file = fopen(argv[i], "r");
 			if (!file) {
-				fprintf(stderr, "loc: Cannot open file: %s", argv[i]);
+				fprintf(stderr, "loc: Cannot open file: %s\n", argv[i]);
 				return 1;
 			}
 			parse_file(file, &loc, &sloc, &bytes);
