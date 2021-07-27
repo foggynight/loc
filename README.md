@@ -2,7 +2,7 @@
 
 ## Description
 
-Print various counts read from standard input:
+Print various counts read from files or standard input:
 - `loc`: Lines of code (number of newline characters)
 - `sloc`: Significant lines of code (number of non-empty lines)
 - `bytes`: Size in bytes (number of characters)
@@ -15,8 +15,17 @@ make
 sudo make install
 ```
 
-**Note:** By default `loc` is installed in the `/usr/local/bin` directory; it
-can be uninstalled using: `sudo make uninstall`.
+**Note:** `loc` is installed in the `/usr/local/bin` directory, it can be
+uninstalled using: `sudo make uninstall`.
+
+
+## Usage
+
+```sh
+loc [FILE]...
+```
+
+**Note:** If `FILE` is omitted, `loc` will read from standard input.
 
 
 ## License
