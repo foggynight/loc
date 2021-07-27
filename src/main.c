@@ -12,11 +12,9 @@ int main(int argc, char **argv)
 	size_t sloc = 0;            // Non-empty lines of code
 	size_t bytes = 0;           // Total size in bytes
 
-	FILE *file;
-
 	if (argc > 1) {
 		for (int i = 1; i < argc; ++i) {
-			file = fopen(argv[i], "r");
+			FILE *file = fopen(argv[i], "r");
 			if (!file) {
 				fprintf(stderr, "loc: Cannot open file: %s\n", argv[i]);
 				return 1;
