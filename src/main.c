@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 void parse_file(FILE *file,
-				size_t *loc,
-				size_t *sloc,
-				size_t *bytes);
+                size_t *loc,
+                size_t *sloc,
+                size_t *bytes);
 
 int main(int argc, char **argv)
 {
@@ -27,17 +27,17 @@ int main(int argc, char **argv)
 	}
 
 	printf("loc:\t%ld\n"
-		   "sloc:\t%ld\n"
-		   "bytes:\t%ld\n",
-		   loc, sloc, bytes);
+	       "sloc:\t%ld\n"
+	       "bytes:\t%ld\n",
+	       loc, sloc, bytes);
 
 	return 0;
 }
 
 void parse_file(FILE *file,
-				size_t *loc,
-				size_t *sloc,
-				size_t *bytes)
+                size_t *loc,
+                size_t *sloc,
+                size_t *bytes)
 {
 	char *line = NULL;
 	size_t line_size = 0;
