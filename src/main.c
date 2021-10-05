@@ -20,6 +20,7 @@ int main(int argc, char **argv)
 				return 1;
 			}
 			parse_file(file, &loc, &sloc, &bytes);
+			fclose(file);
 		}
 	}
 	else {
