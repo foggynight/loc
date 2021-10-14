@@ -1,0 +1,36 @@
+#+title: loc
+
+* Description
+
+Print various counts read from files or standard input:
+- ~loc~: Lines of code (number of newline characters)
+- ~sloc~: Significant lines of code (number of non-empty lines)
+- ~bytes~: Size in bytes (number of characters)
+
+* Installation
+
+#+begin_src sh
+sudo make install
+#+end_src
+
+*Note:* =loc= is installed in the ~/usr/local/bin~ directory, it can be
+uninstalled using: ~sudo make uninstall~.
+
+* Usage
+
+#+begin_src sh
+loc [FILE]...
+#+end_src
+
+*Note:* If ~FILE~ is omitted, =loc= will read from standard input.
+
+* License
+
+Copyright (C) 2021 Robert Coffey
+
+This is free software: you can redistribute it and/or modify it under the terms
+of the GNU General Public License version 3 as published by the Free Software
+Foundation.
+
+You should have received a copy of the GNU General Public License version 3
+along with this software. If not, see [[https://www.gnu.org/licenses/gpl-3.0][GPLv3]].
